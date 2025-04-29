@@ -2,6 +2,9 @@
 #include<stdlib.h>
 
 int main(){
+  
+  //nivel novato: 
+
   char estado[2] = "";
   char codigo_da_carta[4] = "";
   char nome_da_cidade[60] = "";
@@ -70,10 +73,14 @@ int main(){
   printf("  Número de pontos turisticos: ");
   scanf("%d", &N_pontos_turisticos2);
 
+  //fim nivel novato.
+
+  // adição nivel aventureiro:
   float densidade_1 = (float) populacao / area ;
   float densidade_2 = (float) populacao2 / area2 ;
   float PIB_PERCAPTA_1 = (float) (PIB * 1000000000)/ populacao ;
   float PIB_PERCAPTA_2 = (float) (PIB2 * 1000000000)/ populacao2 ;
+  // fim atualização nivel aventureiro
 
   printf("Carta 1: \n");
   printf("  Estado: %s \n",estado);
@@ -83,8 +90,8 @@ int main(){
   printf("  Área: %d km² \n", area);
   printf("  PIB: %.2f bilhões de reais\n", PIB);
   printf("  Número de Pontos Turísticos: %d\n", N_pontos_turisticos);
-  printf("  Densidade populacional: %.2f \n", densidade_1);
-  printf("  PIB per capita: %.2f \n", PIB_PERCAPTA_1);
+  printf("  Densidade populacional: %.2f \n", densidade_1); // atualização NV_aventureiro
+  printf("  PIB per capita: %.2f \n", PIB_PERCAPTA_1); // atualização NV_aventureiro
 
   
   printf("Carta 2: \n");
@@ -95,8 +102,8 @@ int main(){
   printf("  Área: %d km² \n", area2);
   printf("  PIB: %.2f bilhões de reais\n", PIB2);
   printf("  Número de Pontos Turísticos: %d\n", N_pontos_turisticos2);
-  printf("  Densidade poppulacional: %.2f \n", densidade_2);
-  printf("  PIB per capita: %.2f \n", PIB_PERCAPTA_2);
+  printf("  Densidade poppulacional: %.2f \n", densidade_2); // atualização NV_aventureiro
+  printf("  PIB per capita: %.2f \n", PIB_PERCAPTA_2); // atualização NV_aventureiro
 
 
  return 0;
